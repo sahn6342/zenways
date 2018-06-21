@@ -1,0 +1,14 @@
+const sahn=require("os");
+//console.log(sahn);
+//console.log(sahn.constants);
+//console.log(sahn.freemem());
+//console.log(sahn.hostname());
+//console.log(sahn.homedir());
+//console.log(sahn.loadavg());
+//console.log(sahn.platform());
+//console.log(sahn.arch());
+//console.log(process);
+//console.log(process.argv);
+//process.env.mkmkmk=43;
+//console.log(process.env);
+console.log(sahn.networkInterfaces());

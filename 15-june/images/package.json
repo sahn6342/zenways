@@ -1,0 +1,17 @@
+{
+  "name": "images",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "deathbycaptcha": "0.0.3",
+    "google-search-scraper": "0.0.3",
+    "image-downloader": "^3.4.1",
+    "node-google-image-search": "^1.0.3"
+  }
+}
