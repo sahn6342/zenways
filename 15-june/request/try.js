@@ -8,5 +8,6 @@ request(temp, function (error, response, body) {
   console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
   obj=JSON.parse(body); // Print the HTML for the Google homepage.
   console.log(obj.name);
+  console.log(obj);
 });
 
