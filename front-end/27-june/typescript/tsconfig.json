@@ -1,0 +1,10 @@
+{
+	"compilerOptions":{
+		"removeComments":false,
+		"target":"es6",
+		"sourceMap":true
+	},
+	"files":[
+		"syntax.ts"
+	]
+}

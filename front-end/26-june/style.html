@@ -1,0 +1,90 @@
+<html>
+<head>
+	<style>
+/*internal styles*/
+	
+	/*selectors*/
+	/*tag-name-selector*/
+	p{
+		color:blue;
+		padding:1em;/*em use elements size and rem use root element size means htmls size*/
+		margin:1rem;
+		border:1px solid black
+	}
+
+	/*class selector*/
+		.myClass{
+		color:red;
+	}
+	/*id selector*/
+		#new{
+		color:brown;
+	}
+	/*select all div which have class myClass*/
+	div.myClass{
+	}
+	/*div is parrent and */
+
+
+
+
+	div>p{
+
+	}
+	div+p{	
+
+	}
+	/*attribute selector*/
+	[href]{
+	
+	}
+	p[href]{
+	
+	}
+	p [href]{
+	
+	}
+	[href="www.google.com"]{
+	
+	}
+
+	/*pseudo classes*/
+	p:hover{
+	color:blue;	
+	}
+	p:first-child{
+	background-color:black;
+	}
+	div p:first-child{
+	background-color:orange;
+	}
+	div > p:first-child{
+	background-color:red;
+	}
+div{
+height:1000px;
+}
+	/*value inside nth-chid could be numeric or od-even*/
+	p:first-child(1){
+	background-color:gray;	
+}
+p:last-child{
+position:sticky;/*values may be relative or absolute or fixed or static,sticky*/
+top:100px;
+}
+	</style>
+	<!--<link rel="stylesheet" href="./style.css">-->
+</head>
+<body>
+<!--inline styles-->
+	<!--<p style="color:green;">this is p tag</p>-->
+	<p>sahn</p>
+	<p>sahn</p>
+	<div class="myClass">sahn
+	<p>sahn</p></div>
+	<div class="myClass"><p>sahn</p>
+	<p>sahn</p></div>
+	<p id="new">sahn</p>
+<div></div>
+</body>
+<html>

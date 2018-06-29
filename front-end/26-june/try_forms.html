@@ -1,0 +1,31 @@
+<html>
+<head></head>
+<body>
+<!--form-->
+	<form method="" action="">
+
+		<label for="id_name">Name:</lable>
+		<input name="name" id="id_name"maxlength="20" minlength="5"><br>		<!--by default type of input is text-->
+		<lable for="id_email">Email</lable>
+		<input type="email" name="email" id="id_email" required><br>
+		<label for="id_password">Password</lable>	
+		<input name="password" id="id_password" type="password"><br>
+		<label for="id_male">Male</label>
+		<input type="radio" name="gender" id="id_male"checked><br>
+		<label for="id_female">Female</label>
+		<input type="radio" name="gender" id="id_female"><br>
+		<label for="id_number">Phone Number</label>
+		<input type="number" min="6000000000" max="9999999999" name="number" id="id_number"><br>
+		<label for="id_subject">Select subject</label>
+		<select id="id_select" name="subject" multiple>
+			<option>Math</option>
+			<option>English</option>
+			<option>Hindi</option>
+		</select> 
+		<button>submit</button>				<!-- by default type of button is submit in form-->
+		<button type="reset">clear</button>
+		<button type="button">normal</button>
+	</form>
+	<button>button outside from form </button>		<!--by default type of button is button outside of form-->
+</body>
+</html>
