@@ -2,15 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { sahn } from './custom/sahn';
-import { FormsModule } from '@angular/forms';
+import { ComponentOneComponent } from './component-one/component-one.component';
 
 @NgModule({
   declarations: [
-    AppComponent,sahn
+    AppComponent,
+    ComponentOneComponent
   ],
   imports: [
-    BrowserModule,FormsModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

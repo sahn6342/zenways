@@ -1,0 +1,44 @@
+<div class="sahn1">
+    <!-- <img [src]=imgUrl alt="joker" [width]="imgWidth ? imgWidth:200" [height]="imgWidth ? imgWidth:200"><br>
+   
+    <button (click)="imgUrl='https://assets.catawiki.nl/assets/2017/11/27/c/9/7/c97edd5e-206f-4a44-8fc8-2eb30f35407c.jpg'">Image 1</button>
+    <button (click)="imgUrl='https://i.pinimg.com/564x/46/28/6c/46286c62cfc22bc12c72bb643368bd72.jpg'">Image 2</button> 
+    <button (click)="imgUrl='https://media.wired.com/photos/599dcfe8d6c80105bd749ea7/master/w_582,c_limit/joker-TA.jpg'">Default</button>
+   
+    <input type="text" [(ngModel)]="imgWidth"> 
+    <button (click)="imgWidth=undefiend">reset</button>  -->
+    <div class="container" *ngIf="select;then sahn;else parashar"></div>
+<ng-template #parashar>
+    <div class="row" >
+        <div class="col-md-4" *ngFor="let key of game">
+            <button (click)="select=key.gameImg;OBJ=key">
+                    <img src={{key.gameImg}} height="200px" width="200px">
+            </button>
+        </div>
+    </div>
+    <h3>To Add</h3>
+    name:<input #name type="text">
+    url:<input #url type="text">
+    Players:<input #PLAY type="text">
+    <button class="btn btn-success" (click)="game.push({
+        gameName:name.value,
+        gameImg:url.value,
+        player:[PLAY.value]
+    })">push</button><br>
+    <button class="btn btn-success" (click)="game.pop({
+    })">pop</button>
+</ng-template>
+    <ng-template #sahn>
+        <!-- <img src="{{select}}"height="400px" width="400px" ><br> -->
+        <p>Name:{{OBJ.gameName}}</p>
+        <img src="{{OBJ.gameImg}}"height="400px" width="400px" ><br>
+        Players: <p style="display: inline;color: black" *ngFor="let obj Of OBJ.player">
+            {{obj}},
+        </p>
+
+    Players:<input #play type="text">
+    <button (click)="OBJ.player.push(play.value)">add player</button>
+            <button class="btn btn-danger" (click)="select=undefiend">BACK</button>
+    </ng-template>
+    
+</div>
