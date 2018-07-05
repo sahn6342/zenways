@@ -1,0 +1,23 @@
+<div class="container pt-5">
+  <div class="row justify-content-center">
+      <div class="col-md-4 ">
+          <form #signupForm="ngForm" (ngSubmit)="submit(signupForm.value)">
+            <div class="form-group">
+                <input type="text" #name="ngModule" name="name" ngModel placeholder="name" required class="form-control">
+            </div>  
+            <div class="form-group">
+                  <input name="username" type="text" class="form-control" placeholder="username" #username="ngModel" ngModel required minlength="5">
+              </div>
+              <div *ngIf="username.errors">
+                  <small *ngIf="username.errors.minlength && username.touched">length</small>
+              </div>
+              <div class="form-group">
+                  <input type="password" name="password" class="form-control" placeholder="password" #password="ngModel" ngModel required>
+              </div>
+              <div class="form-group text-center">
+                  <button [disabled]="signupForm.invalid"class="btn btn-success">signup</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
